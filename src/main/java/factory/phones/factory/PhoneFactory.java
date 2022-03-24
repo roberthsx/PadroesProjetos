@@ -3,11 +3,10 @@ package factory.phones.factory;
 import factory.phones.models.Phone;
 
 public abstract class PhoneFactory {
-    public Phone orderIPhone() {
+    public Phone orderPhone() {
         Phone device = null;
 
         device = createPhone();
-
         device.getHardware();
         device.assemble();
         device.certificates();

@@ -8,14 +8,14 @@ import factory.phones.models.Phone;
 public class Client {
     public static void main(String[] args) {
         PhoneFactory iphoneFactory = new IphoneFactory();
-        PhoneFactory SamsungFactory = new SamsungFactory();
+        PhoneFactory samsungFactory = new SamsungFactory();
 
         System.out.println("### Ordering an iPhone");
-        Phone iphone = iphoneFactory.orderIPhone();
+        Phone iphone = iphoneFactory.orderPhone();
         System.out.println(iphone);
 
         System.out.println("\n\n### Ordering an Samsung");
-        Phone iphone2 = SamsungFactory.orderIPhone();
-        System.out.println(iphone2);
+        Phone samsung = samsungFactory.orderPhone();
+        System.out.println(samsung);
     }
 }
